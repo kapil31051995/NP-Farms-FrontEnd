@@ -18,8 +18,6 @@ const Reducer = (state=inital_state,action)=>{
     // break
     default:
     return state
-   
-
     }
 }
 

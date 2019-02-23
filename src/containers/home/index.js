@@ -1,6 +1,6 @@
 import React from 'react'
 import {AppTopBar ,SideNav} from '../../modules/AppStructuralComponent'
-import { connect } from 'react-redux'
+
 import ProductPage from '../../containers/home/ProductPage'
 
 const Home = props => (
@@ -11,10 +11,8 @@ const Home = props => (
    </div>
 )
 
-const mapStateToProps = state => ({
-  state
-})
 
 
 
-export default connect(mapStateToProps)(Home)
+
+export default Home

@@ -4,14 +4,14 @@ export const actionConstants = {
   RESPONSE_DATA_FROM_SERVER: "RESPONSE_DATA_FROM_SERVER"
 };
 
-const GetREquestData = data => {
+const GetRequestData = data => {
  return {
     type: actionConstants.RESPONSE_DATA_FROM_SERVER, data
   }
 };
 
 export const ActionCreator = {
-  GetREquestData
+  GetRequestData
 }
 
 const getHomePageData = () => {
@@ -20,7 +20,7 @@ const getHomePageData = () => {
     return axios
       .get("http://172.20.10.11:9000/api/home")
       .then(response => {
-        dispatch(GetREquestData(response.data));
+        dispatch(GetRequestData(response.data));
       })
       .catch(error => {
         console.log(error);
